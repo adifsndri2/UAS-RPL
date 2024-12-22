@@ -1,4 +1,4 @@
 output: {
-    path: path.resolve(__dirname, 'dist'), // Ensure this path is correct
+    path: path.resolve(__dirname, ''), // Ensure this path is correct
     filename = 'bundle.js'
   }
