@@ -1,9 +1,4 @@
-const path = require('path');
+const mix = require('laravel-mix');
 
-module.exports = {
-  // Other configurations...
-  output: {
-    path: path.resolve(__dirname, 'dist'), // Ensure this points to 'dist'
-    filename: 'bundle.js', // Your output file name
-  },
-};
+mix.js('resources/js/app.js', 'public/js')
+   .sass('resources/sass/app.scss', 'public/css');
